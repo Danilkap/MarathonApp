@@ -1,0 +1,75 @@
+﻿<Page x:Class="MarathonApp.Pages.RunnerMenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MarathonApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Меню бегуна">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Name="BackButton"
+                Width="100"
+                Height="40"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="5"
+                Content="Назад"
+                Click="BackButton_Click"/>
+
+        <Button Name="LogoutButton"
+                Width="100"
+                Height="40"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="5"
+                Content="Logout"/>
+
+        <TextBlock HorizontalAlignment="Center"
+                   Foreground="Gray"
+                   FontSize="25">Меню бегуна</TextBlock>
+        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top">
+            <StackPanel Grid.Row="1" Orientation="Vertical" VerticalAlignment="Center">
+                <Button Width="310" 
+                        Height="60"
+                        Margin="15"
+                        FontSize="20"
+                        FontStyle="Italic">Регистрация на марафон</Button>
+
+                <Button Width="310" 
+                        Height="60"
+                        Margin="15"
+                        FontSize="20"
+                        FontStyle="Italic">Редактирование профиля</Button>
+
+                <Button
+                        Width="310" 
+                        Height="60"
+                        Margin="15"
+                        FontSize="20"
+                        FontStyle="Italic">Контакты</Button>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center" Grid.Row="1" Orientation="Vertical" VerticalAlignment="Top">
+                <Button Width="310" 
+                        Height="60"
+                        Margin="15"
+                        FontSize="20"
+                        FontStyle="Italic">Мои результаты</Button>
+
+                <Button 
+                        Width="310" 
+                        Height="60"
+                        Margin="15"
+                        FontSize="20"
+                        FontStyle="Italic">Мой спонсор</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
